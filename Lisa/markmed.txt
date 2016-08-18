@@ -1,0 +1,24 @@
+Hyperlink:
+
+TARGET attr :
+
+_blank - Uues aknas või tabis
+_self - default
+_parent - Avab parent frame'is
+_top - Opens the linked document in the full body of the window
+framename - Opens the linked document in a named frame
+
+<a href="http://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+
+<style>
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:pink; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+</style>
+
+###########################################################################
+
+Viitade nimekiri
+

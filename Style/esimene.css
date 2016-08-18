@@ -1,0 +1,32 @@
+body {
+
+	font-family: arial;
+	background-color: #5C5654  ;
+	color: white;
+}
+
+header {
+	font-family: arial;
+	height: 50px;
+	padding: 10px;
+	margin: 0px, 0px, 0px, 0px;
+	background-color: #393635;
+	text-align: center;
+	color: white;
+}
+
+a:link {
+
+	color: #E76245 ; 
+}
+
+a:hover {
+
+	color: #FB34ff ;
+}
+
+a:visited {
+
+
+	color: #FB7F0A;
+}
