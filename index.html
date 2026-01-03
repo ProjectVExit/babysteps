@@ -1,19 +1,87 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="et">
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="Style/esimene.css">
-	<title>Entryway</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kliinikute Kontaktid - Silmaravi 2026</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.5; color: #000; background-color: #fff; padding: 20px; max-width: 900px; margin: auto; }
+        h1 { color: #d32f2f; font-size: 50px; border-bottom: 8px solid #d32f2f; padding-bottom: 10px; text-align: center; }
+        h2 { background-color: #004d40; color: white; padding: 20px; font-size: 38px; margin-top: 40px; border-radius: 10px; }
+        p, li { font-size: 30px; margin-bottom: 25px; }
+        strong { color: #d32f2f; }
+        .contact-box { background-color: #fff9c4; border: 4px dashed #fbc02d; padding: 25px; margin-top: 20px; border-radius: 15px; }
+        .price-tag { display: inline-block; background-color: #ffd600; padding: 15px; font-weight: bold; font-size: 32px; border-radius: 10px; margin-top: 10px; }
+        .controls { position: sticky; top: 0; background: white; padding: 10px; border-bottom: 2px solid #ccc; text-align: center; z-index: 100; }
+        button { font-size: 26px; padding: 15px 30px; cursor: pointer; background-color: #000; color: #fff; border: none; border-radius: 10px; margin: 5px; }
+        a { color: #0066cc; text-decoration: underline; font-weight: bold; }
+    </style>
 </head>
-<header> <u>Change</u> is the end result of all true learning. </header>
 <body>
-<br>
-<ul>
-	<li><a href="Lisa/markmed.txt" target="_blank">Märkmed</a></li>
-	<li><a href="#">Viidad</a></li>
-	<li><a href="#">Online materjal</a></li>
-</ul>
+
+    <div class="controls">
+        <button onclick="changeFontSize(4)">SUUREM TEKST +</button>
+        <button onclick="changeFontSize(-4)">VÄIKSEM TEKST -</button>
+    </div>
+
+    <h1>Silmaravi Kontaktandmed</h1>
+
+    <p>See on nimekiri kliinikutest, kus tehakse tüvirakkude siirdamist ja Valeda valgusravi. Need asuvad väljaspool Eestit.</p>
+
+    <h2>1. Tüvirakkude siirdamine (Türgi)</h2>
+    <p>Istanbulis asuvad maailmatasemel haiglad, mis tegelevad võrkkesta taastamisega tüvirakkude abil.</p>
+    
+    <div class="contact-box">
+        <p><strong>Kliinik: Liv Hospital Ulus</strong></p>
+        <p>Aadress: Ahmet Adnan Saygun Cad. Canan Sok. No:5, Beşiktaş, Istanbul.</p>
+        <p>Telefon: <a href="tel:+902129998099">+90 212 999 80 99</a></p>
+        <p>Veeb: <a href="https://www.livhospital.com" target="_blank">www.livhospital.com</a></p>
+    </div>
+
+    <div class="contact-box" style="margin-top: 20px;">
+        <p><strong>Kliinik: Dünyagöz Hospital (Etiler)</strong></p>
+        <p>Spetsialist: Dr. Fevzi Akkan (AMD ekspert)</p>
+        <p>Aadress: Nispetiye Cd. No:114, Beşiktaş, Istanbul.</p>
+        <p>Veeb: <a href="https://www.dunyagoz.com/en" target="_blank">www.dunyagoz.com</a></p>
+    </div>
+    <div class="price-tag">Hind: u. 8 000 – 16 000 €</div>
+
+    <hr style="margin: 50px 0;">
+
+    <h2>2. Valeda Valgusravi (Soome)</h2>
+    <p>Lähim koht Eestile. <strong>TÄHELEPANU:</strong> Peamine Valeda keskus asub Tamperes (mitte Helsingis), kuhu saab Helsingist rongiga 1.5 tunniga.</p>
+
+    <div class="contact-box">
+        <p><strong>Kliinik: Silmäsairaala ÖGA</strong></p>
+        <p>See on esimene kliinik Soomes, mis hakkas pakkuma Valeda hooldust.</p>
+        <p>Aadress: Näsilinnankatu 27, 33200 Tampere, Finland.</p>
+        <p>Telefon: <a href="tel:+358505862555">+358 50 586 2555</a></p>
+        <p>Veeb: <a href="https://oga.fi" target="_blank">www.oga.fi</a></p>
+    </div>
+
+    <div class="contact-box" style="margin-top: 20px;">
+        <p><strong>Kliinik: Silmäsairaala Valo (Helsingi)</strong></p>
+        <p>Asub Helsingi südames. Tegelevad kõigi rappeuma uuringutega.</p>
+        <p>Aadress: Mannerheimintie 12, Helsingi.</p>
+        <p>Telefon: <a href="tel:+35810192020">+358 010 19 2020</a></p>
+    </div>
+    <div class="price-tag">Hind: u. 2 000 € (9 seanssi)</div>
+
+    <hr style="margin: 50px 0;">
+
+    <p style="text-align: center; color: #666; font-style: italic;">
+        Soovitus: Enne reisi saatke kliinikule e-mailiga oma viimased OCT (silmapõhja) uuringute tulemused Eestist, et nad saaksid kinnitada sobivust.
+    </p>
+
+    <script>
+        function changeFontSize(step) {
+            const elements = document.querySelectorAll('p, li, h2, h1, .price-tag, .contact-box p');
+            elements.forEach(el => {
+                let currentSize = parseFloat(window.getComputedStyle(el).fontSize);
+                el.style.fontSize = (currentSize + step) + 'px';
+            });
+        }
+    </script>
 
 </body>
 </html>
